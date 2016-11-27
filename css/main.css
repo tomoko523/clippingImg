@@ -1,0 +1,155 @@
+#imgselect, #canvasarea, #clipcanarea, #page2, #page3 {
+  text-align: center;
+}
+#page1 {
+  background-image: url("../img/1stbg.png");
+}
+#page2 {
+  background-image: url("../img/2ndbg.png");
+}
+#page3 {
+  background-image: url("../img/3rdbg.png");
+}
+#clipcanarea{
+  height: 90%;
+  width: 90%;
+  margin: 0 auto;
+  background-image: url("../img/clipping.png");
+}
+input {
+  display: none;
+}
+#menu li {
+  display: inline-block;
+  margin: 6px;
+  color: #333;
+  font-family: 'Pacifico', cursive;
+  font-weight: 900;
+  /*font-family: Allura, Verdana, Geneva, sans-serif;*/
+  font-size: 100%;
+}
+#menu li.active {
+  background: #666;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+#menu li a {
+  text-decoration: none;
+  color: #333;
+}
+#menu li.active a:hover {
+  color: #999;
+}
+#menu li:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+#menu li a, #menu li.active a {
+  padding: 8px 18px;
+  display: block;
+}
+#menu li.active a {
+  color: #fff;
+}
+#menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 47px;
+  z-index: 70;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: rgba(255, 255, 255, 0.4);
+}
+.table-ul {
+  display: table;
+  table-layout: fixed;
+  text-align: center;
+  width: 100%;
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+.table-ul li {
+  display: table-cell;
+  vertical-align: middle;
+  list-style-type: none;
+  height: 40px;
+}
+#can {
+  border: 1px solid blue;
+  cursor: pointer;
+}
+p.animetionNew02, .btns {
+  text-align: center;
+  display: inline-block;
+  padding: .35em 1em;
+  text-align: center;
+  background: #54bb00;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 0 1px 0 #3f3f3f;
+  margin: 0 25px 25px 0;
+  letter-spacing: 10px;
+  border-radius: 10px;
+  line-height: 3;
+  font-size: 50px;
+  font-family: 'Pacifico', cursive;
+  font-weight: 900;
+}
+
+/* arrange06 */
+
+p.animetionNew02.arrange06 {
+  position: relative;
+  bottom: 0;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-transform-origin: middle center;
+  -webkit-animation-name: animation06;
+  -webkit-transform: rotate(0deg);
+}
+@-webkit-keyframes animation06 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    bottom: 0;
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+    bottom: 0;
+  }
+  60% {
+    -webkit-transform: rotate(5deg);
+    bottom: 5px;
+  }
+  70% {
+    -webkit-transform: rotate(-5deg);
+  }
+  80% {
+    -webkit-transform: rotate(4deg);
+  }
+  90% {
+    -webkit-transform: rotate(-3deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+  }
+}
+.enFont {
+  font-family: 'Pacifico', cursive;
+  font-weight: 500;
+}
+.jaFont {
+  font-family: 'Noto Sans Japanese', serif;
+  font-weight: 500;
+}
+#underBtn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.atention{
+  color: red;
+}
